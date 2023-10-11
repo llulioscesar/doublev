@@ -1,0 +1,23 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+"""User model"""
+type User {
+  login: String
+  id: Int
+  avatar_url: String
+  url: String
+  html_url: String
+  followers_url: String
+  followers_count: Int
+}
+
+type Query {
+  findUsers(args: FindUsersArgs!): [User!]!
+  getUser(args: FindUsersArgs!): User!
+}
+
+input FindUsersArgs {
+  name: String!
+}
